@@ -1,0 +1,233 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+#navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    top: 0px;
+    left: 0px;
+}
+
+/* logo and logo image */
+#logo{
+    margin: 3px 18px;
+}
+#logo img{
+    margin: 2px 2px;
+    width: 50px;
+    height: 51px;
+}
+
+/* Navbar and list styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 26px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Home Section */
+/* background image */
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('h1.jpeg') no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 2px 227px;
+}
+
+#home h1{
+    color: white;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;  
+}
+#home p{
+   
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.btn{
+    background-color: brown;
+    color:white;
+    margin: 17px;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 14px;
+
+}
+.box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#services p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 3px;
+    padding: 13px 10px;
+    background-color: rgb(237 232 232);
+    border-radius: 23px;
+}
+
+/* Clients Section */
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#client-section{
+    position: relative;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 60px;
+}
+#client-section h1{
+    padding-top: 14px;
+}
+
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('h2.jpeg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Contact Us Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('contact.jpeg') no-repeat center center/cover;
+    height: 480px;    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#contact-box input, #contact-box textarea{
+    background-color: rgb(226 211 211);
+    border-radius: 10px;
+}
+.form-group{
+    margin: 10px;
+}
+#submit-button{
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    background-color: #8d7fa8;
+    color: white;
+    padding: 5px 20px;
+}
+
+
+
+/* Tempalte Classes */
+.h-primary{
+    font-size: 3.3rem;
+    padding: 3px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.center{
+text-align: center;
+
+}
